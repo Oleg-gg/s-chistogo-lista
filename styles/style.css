@@ -51,9 +51,6 @@ a {
 .header_menu_link:not(:last-child) {
   padding-bottom: 12px;
 }
-.header_menu_active-link {
-
-}
 .cover-title {
   padding: 0 20px 0 20px;
   font-family: 'EB Garamond', 'serif';
@@ -144,9 +141,6 @@ a {
   background-color: #FEE42A;
   color: #131313;
 }
-.card__author {
-
-}
 .card__author-photo {
   width: 100px;
   height: auto;
@@ -170,7 +164,7 @@ a {
   font-size: 16px;
   line-height: 21.6px;
 }
-/*-----------------------------ФУТЕР--------------------------------*/
+/*-----------------------------подвал--------------------------------*/
 .footer {
   display: flex;
   justify-content: space-between;
