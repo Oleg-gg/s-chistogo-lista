@@ -1,187 +1,259 @@
 body {
   margin: 0;
-  background-color: #1e1e1e;
-  font-family: 'Inter', 'sans-serif';
+  font-family: Inter;
   font-weight: 400;
+  font-style: normal;
 }
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
-p, 
-ul, 
-ol, 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
 blockquote {
   margin: 0;
   padding: 0;
 }
-a {
-  color: inherit;
-}
+
 .content-section {
   width: 360px;
   box-sizing: border-box;
   margin: 0 auto;
 }
+
 .content-section_theme_dark {
+  color: #f5f5f5;
   background-color: #131313;
-  color: #F5F5F5;
 }
+
 .content-section_theme_bright {
-  background-color: #FEE42A;
   color: #131313;
+  background: #fee42a;
 }
-.header_navigation {
+
+/* Header */
+
+header {
+  padding: 24px 20px;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 24px;
 }
-.header_logo {
-  width: 78.45px;
-  height: 15.43px;
-  padding: 24px 0 0 20px;
+
+.header__logo-image {
+  height: 16px;
 }
-.header_menu {
-  list-style: none;
-  padding: 24px 20px 0 0;
+
+.header__menu {
   font-size: 16px;
+  line-height: 19.2px; 
 }
-.header_menu_link:not(:last-child) {
-  padding-bottom: 12px;
+
+.header__menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  list-style-type: none;
 }
-.cover-title {
-  padding: 0 20px 0 20px;
-  font-family: 'EB Garamond', 'serif';
-  font-size: 72px;
-  color: #fff;
-  font-weight: 400;
-  background-image: url('../s-chistogo-lista-review/images/cover.svg');
+
+.header__menu-link {
+  color: #f5f5f5;
+}
+
+/* Cover */
+
+.cover {
+  min-height: 198px;
+  padding: 0 20px;
+  background-image: url(/images/cover.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  min-height: 221px;
+  background-size: 95% auto;
+  background-position: right bottom;
 }
+.cover__title {
+  font-family: "EB Garamond";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+}
+
 .accent-span {
   display: block;
 }
+
 .text-center {
   text-align: center;
 }
+
 .text-right {
   text-align: right;
 }
-.intro__heading {
-  padding-top: 30px;
-  padding: 30px 20px 24px 20px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 16px;
-}
-.intro__title {
-  color: #CCCCCC;
-  font-weight: 400;
-  font-size: 16px;
 
+/* Intro */
+
+.intro__heading {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 19.2px;
 }
+
 .intro__date {
   white-space: nowrap;
-  color: #CCCCCC;
 }
+
 .intro__main-text {
-  padding: 0 20px 37px 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  padding: 0 20px 37px;
+  font-size: 16px;
+  line-height: 21.6px;
 }
-.intro__main-text_paragraph:not(:last-child) {
-  padding-bottom: 24px;
+
+/* Reasons */
+
+.reasons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding: 40px 20px;
 }
+
 .content-section__subtitle {
-  font-family: 'EB Garamond', 'serif';
+  font-family: "EB Garamond";
   font-size: 28px;
+  font-style: normal;
   font-weight: 500;
-  padding: 40px 20px 32px 20px;
+  line-height: 32.2px;
 }
+
 .content-section__introduction {
-  padding: 0 20px 32px 20px;
-  line-height: 27px;
   font-size: 20px;
+  line-height: 27px;
 }
+
 .content-section__list {
-  padding: 0 20px 39px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 20px;
 }
+
 .content-section__list-item {
   font-size: 16px;
   line-height: 21.6px;
 }
-.content-section__list-item:not(:last-child) {
-  padding-bottom: 16px;
-}
+
 .content-section__list-accent {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
   font-weight: 700;
-  display: inline;
+  line-height: 21.6px;
 }
 
-/*----------------------------------------------------------*/
+/* how-to */
+
+.how-to {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding: 40px 20px 60px;
+}
 
 .cards-list {
-  list-style: none;
-  padding: 0 20px 60px 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
 }
+
 .card {
   border-radius: 30px;
-  padding: 24px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
 }
-.cards-list__item:not(:last-child) {
-  padding-bottom: 32px;
-}
+
 .card_theme_dark {
   background-color: #343434;
 }
-.card_theme_bright {
-  background-color: #FEE42A;
-  color: #131313;
+
+.card__author {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding: 20px 0 0 20px;
 }
+
 .card__author-photo {
   width: 100px;
-  height: auto;
-  padding-bottom: 8px;
+  border-radius: 50px;
 }
-.card__author-name {
-  padding-bottom: 8px;
-  font-size: 16px;
-  font-weight: 700;
-}
-.card__content {
 
+.card__author-name {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21.6px;
 }
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding: 0px 20px 20px;
+}
+
 .card__title {
-  font-family: 'EB Garamond', 'serif';
+  font-family: "EB Garamond";
   font-size: 22px;
-  padding-bottom: 8px;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29.7px;
 }
+
 .card__text {
   font-size: 16px;
   line-height: 21.6px;
 }
-/*-----------------------------подвал--------------------------------*/
-.footer {
+
+.card_text-only {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.card_theme_bright {
+  background-color: #fee42a;
+  color: #131313;
+}
+
+/* Footer */
+
+footer {
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px 20px 20px;
-  border-top: 1px solid #FEE42A;
+  padding: 20px;
+  border-top: 1px solid #fee42a;
+  align-items: center;
 }
+
 .footer__copy {
-  width: 78.45px;
-  height: 15.43px;
+  font-size: 16px;
+  line-height: 21.6px;
 }
+
 .footer__links {
-  list-style: none;
   display: flex;
-}
-.footer__links_item > a {
-  text-decoration: none;
-}
-.footer__links_item:not(:last-child) {
-  padding-right: 16px;
+  column-gap: 16px;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 17.5px;
 }
